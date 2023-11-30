@@ -1,1 +1,1 @@
-Projeto experimental para disponibilizar uma Lista de Compras de supermercado.
+Projeto experimental para disponibilizar uma Lista de Compras de supermercado, ainda em desenvolvimento.
