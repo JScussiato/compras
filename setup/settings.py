@@ -118,4 +118,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static/styles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 	# aqui no settings.py e em letras maiúsculas
+MEDIA_URL = ("/media/")				# indicam variáveis globais
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
