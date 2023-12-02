@@ -2,7 +2,7 @@ from django.urls import path
 from produtos.views import indexprodutos, imagemprodutos, buscarproduto # Vêm de views.py
 
 urlpatterns = [
-    path('', indexprodutos, name='indexprodutos'),
+    path('', indexprodutos, name='indexprodutos'), # a declaração '' (vazio) é para que não seja exibido nada na URL
     path('imagemprodutos/<int:foto_id>', imagemprodutos, name='imagemprodutos'),
     path("buscarproduto", buscarproduto, name="buscarproduto"),
 ]
