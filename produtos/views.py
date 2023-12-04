@@ -1,7 +1,11 @@
-from django.shortcuts import render, get_object_or_404 
+from django.shortcuts import render, get_object_or_404, redirect
 from produtos.models import ProdutoImg
+from django.contrib import messages
 
 def indexprodutos(request):
+	if not request.user.is_authenticated:
+		messages.error(request, "Usuário não logado")
+		return redirect('login')
 	produtos = ProdutoImg.objects.order_by("nome").all() # o modelo busca tudo que tem no BD
 	return render(request, 'produtos/indexprodutos.html', {"cards": produtos}) # cards envia o dicionário p/o render
 
@@ -17,6 +21,10 @@ def imagemprodutos(request, foto_id):
 # produtos/imagemprodutos.html é a tela a renderizar
 
 def buscarproduto(request):
+	if not request.user.is_authenticated:
+		messages.error(request, "Usuário não logado")
+		return redirect('login')
+
 	produtos = ProdutoImg.objects.order_by("nome").all()
 	if "buscarproduto" in request.GET: # confirma que o termo buscarproduto está contido na URL
 		produto_a_buscar = request.GET['buscarproduto'] # o 'buscarproduto' é o "name" colocado no _menu.html
