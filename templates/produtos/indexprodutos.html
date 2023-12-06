@@ -10,11 +10,12 @@
                 <section class="tags">
                     <p class="tags__titulo">Busque por Setor:</p>
                     <ul class="tags__lista">
-                        <li class="tags__tag">Açougue</li>
-                        <li class="tags__tag">Bebidas</li>
-                        <li class="tags__tag">Bomboniere</li>
-<!--                        <li class="tags__tag">Conservas</li>
-                        <li class="tags__tag">Grãos</li>
+                    <!-- 'Açougue' abaixo está conforme OPCOES_SETORES = [ em models.py -->
+                        <li class="tags__tag"><a href="{% url 'filtro' 'Açougue' %}" class="btn" style="color: #C9C9C9;">Açougue</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'Bebidas' %}" class="btn" style="color: #C9C9C9;">Bebidas</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'Bomboniere' %}" class="btn" style="color: #C9C9C9;">Bomboniere</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'Conservas' %}" class="btn" style="color: #C9C9C9;">Conservas</a></li>
+<!--                        <li class="tags__tag">Grãos</li>
                         <li class="tags__tag">Higiene</li>
                         <li class="tags__tag">Hortifruti</li>
                         <li class="tags__tag">Laticínios</li>
