@@ -1,3 +1,4 @@
+<!-- templates / produtos / imagemprodutos.html-->
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block content %}
@@ -18,8 +19,8 @@
                                 <p class="imagem__texto">{{ produto.preco }}</p>
                             </div>
                             <div>
-                                <a href="{% url 'editarproduto' %}"><button class="btn btn-success col-12" style="padding: top 5px;">Editar</button></a>
-                                <a href="{% url 'deletarproduto' %}"><button class="btn btn-danger col-12" style="padding: top 5px;">Apagar</button></a>
+                                <a href="{% url 'editarproduto' produto.id %}"><button class="btn btn-success col-12" style="padding: top 5px;">Editar</button></a>
+                                <a href="{% url 'deletarproduto' produto.id %}"><button class="btn btn-danger col-12" style="padding: top 5px;">Apagar</button></a>
                             </div>
                         </div>
                     </div>
