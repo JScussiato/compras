@@ -3,26 +3,22 @@
 {% load static %}
 {% block content %}
             <section class="conteudo">
-                <section class="banner">
-                    <img class="banner__imagem" src="{% static '/assets/imagens/Banner(2).png' %}" alt="banner L.C.">
-                    <h1 class="banner__titulo"> A Lista de Compras Mais Legal!</h1>
-                </section>
-                <section class="tags">
-                    <p class="tags__titulo">Busque por Setor:</p>
+<!--                <section class="tags">
+                    <p class="tags__titulo">Busca por Setor:</p>
                     <ul class="tags__lista">
-                    <!-- 'Açougue' abaixo está conforme OPCOES_SETORES = [ em models.py -->
+                    'Açougue' abaixo está conforme OPCOES_SETORES = [ em models.py
                         <li class="tags__tag"><a href="{% url 'filtro' 'Açougue' %}" class="btn" style="color: #C9C9C9;">Açougue</a></li>
                         <li class="tags__tag"><a href="{% url 'filtro' 'Bebidas' %}" class="btn" style="color: #C9C9C9;">Bebidas</a></li>
                         <li class="tags__tag"><a href="{% url 'filtro' 'Bomboniere' %}" class="btn" style="color: #C9C9C9;">Bomboniere</a></li>
                         <li class="tags__tag"><a href="{% url 'filtro' 'Conservas' %}" class="btn" style="color: #C9C9C9;">Conservas</a></li>
-<!--                        <li class="tags__tag">Grãos</li>
+                        <li class="tags__tag">Grãos</li>
                         <li class="tags__tag">Higiene</li>
                         <li class="tags__tag">Hortifruti</li>
                         <li class="tags__tag">Laticínios</li>
                         <li class="tags__tag">Organizadores</li>
-                        <li class="tags__tag">Padaria</li>-->
+                        <li class="tags__tag">Padaria</li>
                     </ul>
-                </section>
+                </section>-->
                 <section class="produtos">
                     <div class="cards">
                         <h2 class="cards__titulo">Navegue Pelos Produtos</h2>
@@ -40,7 +36,7 @@
                                     <img class="card__imagem" src="{{ produto.foto.url }}" alt="foto">
                                 {% endif %}
                                 </a>
-                                <span class="card__tag">Graos</span>
+                                <span class="card__tag">{{ produto.setor }}</span>
                                 <div class="card__info">
                                     <p class="card__titulo">{{ produto.nome }}</p>
                                     <div class="card__texto">
