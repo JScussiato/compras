@@ -3,22 +3,6 @@
 {% load static %}
 {% block content %}
             <section class="conteudo">
-<!--                <section class="tags">
-                    <p class="tags__titulo">Busca por Setor:</p>
-                    <ul class="tags__lista">
-                    'Açougue' abaixo está conforme OPCOES_SETORES = [ em models.py
-                        <li class="tags__tag"><a href="{% url 'filtro' 'Açougue' %}" class="btn" style="color: #C9C9C9;">Açougue</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtro' 'Bebidas' %}" class="btn" style="color: #C9C9C9;">Bebidas</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtro' 'Bomboniere' %}" class="btn" style="color: #C9C9C9;">Bomboniere</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtro' 'Conservas' %}" class="btn" style="color: #C9C9C9;">Conservas</a></li>
-                        <li class="tags__tag">Grãos</li>
-                        <li class="tags__tag">Higiene</li>
-                        <li class="tags__tag">Hortifruti</li>
-                        <li class="tags__tag">Laticínios</li>
-                        <li class="tags__tag">Organizadores</li>
-                        <li class="tags__tag">Padaria</li>
-                    </ul>
-                </section>-->
                 <section class="produtos">
                     <div class="cards">
                         <h2 class="cards__titulo">Navegue Pelos Produtos</h2>
@@ -38,18 +22,20 @@
                                 </a>
                                 <span class="card__tag">{{ produto.setor }}</span>
                                 <div class="card__info">
-                                    <p class="card__titulo">{{ produto.nome }}</p>
-                                    <div class="card__texto">
-                                        <p class="card__descricao">{{ produto.legenda }}</p>
-                                        <span>
+                                    <!-- <p class="card__titulo"> <a href="{% url 'imagemprodutos' produto.id %}"> {{ produto.nome }} </a></p> -->
+                                    <p class="card__titulo"> {{ produto.nome }} </a></p>
+                                    <!-- <div class="card__texto"> -->
+                                    <p class="card__titulo">{{ produto.unidade }}</p>
+                                    <p class="card__titulo">{{ produto.preco }}</p>
+                                        <!-- <span>
                                             <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
-                                        </span>
-                                    </div>
+                                        </span> -->
+                                    <!-- </div> -->
                                 </div>
                             </li>
                             {% endfor %}
                             {% else %}
-                            <div class=”imagem__texto>
+                            <div class="imagem__texto">
                                 <p>Nada encontrado para exibir. </p>
                             </div>
                             {% endif %}
