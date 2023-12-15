@@ -353,7 +353,7 @@ table {
 .tags {
     padding: 1.5rem 0;
     display: flex;
-    align-items: center;
+    align-items: top;
     color: #D9D9D9;
     font-size: 1.1rem;
 }
@@ -504,7 +504,7 @@ table {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #C9C9C9;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
