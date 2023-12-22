@@ -7,6 +7,8 @@ from pathlib import Path, os
 from dotenv import load_dotenv
 load_dotenv()
 
+# input("Estou em setup / settings.py")
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -32,6 +34,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "apps.lcompras.apps.LcomprasConfig",
     "apps.produtos.apps.ProdutosConfig",
     "apps.usuarios.apps.UsuariosConfig",
     "apps.cargajson.apps.CargajsonConfig",

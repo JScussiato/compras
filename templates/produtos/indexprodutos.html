@@ -2,13 +2,14 @@
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block content %}
-            <section class="conteudo">
+            <!-- <p class="imagem__titulo">Estou em templates / produtos / indexprodutos.html</p> -->
+            <section class="conteudo">    
                 <section class="produtos">
                     <div class="cards">
                         <h2 class="cards__titulo">Navegue Pelos Produtos</h2>
                         <ul class="cards__lista">
                             {% if cards %} <!-- teste para garantir que há conteúdo em cards -->
-<!-- Abaixo, foto_id vem do dicionário em views
+<!-- Abaixo, produto.id vem do dicionário em views
 # info é o value do dicionário
 # cards.items: card é a variável que contém o dicionário, e items indica os itens-->
                             {% for produto in cards %} 
@@ -23,7 +24,7 @@
                                 <span class="card__tag">{{ produto.setor }}</span>
                                 <div class="card__info">
                                     <!-- <p class="card__titulo"> <a href="{% url 'imagemprodutos' produto.id %}"> {{ produto.nome }} </a></p> -->
-                                    <p class="card__titulo"> {{ produto.nome }} </a></p>
+                                    <p class="card__titulo">{{ produto.nome }}</p>
                                     <!-- <div class="card__texto"> -->
                                     <p class="card__titulo">{{ produto.unidade }}</p>
                                     <p class="card__titulo">{{ produto.preco }}</p>
