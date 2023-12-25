@@ -6,6 +6,7 @@
                 <!-- <p class="imagem__titulo">Estou em templates / produtos / imagemprodutos.html</p> -->
                 <section class="imagemprodutos">
                     <div class="imagem__conteudo">
+                        <h2 class="cards__titulo">Produto Selecionado</h2>
                     {% if produto.foto == "" or produto.foto == null %}
                         <img class="imagem__imagem" src="{% static '/assets/imagens/produtos/not-found.png'%}" alt="sem foto">
                     {% else %}
