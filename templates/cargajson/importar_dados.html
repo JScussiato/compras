@@ -1,0 +1,6 @@
+<!-- templates / cargajson / importar_dados.html-->
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="cargacsv">
+    <button type="submit">Importar</button>
+</form>

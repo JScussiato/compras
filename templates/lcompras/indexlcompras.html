@@ -1,0 +1,90 @@
+<!-- templates / lcompras / indexlcompras.html-->
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+            <body class="lcompras">
+                <!-- <p class="imagem__titulo">Estou em templates / lcompras / indexlcompras.html</p> -->
+                <section class="conteudo">
+                    <section class="produtos">
+                        <div class="cards">
+                            <h2 class="cards__titulo">Navegue Pela Lista de Compras</h2>
+                            <ul class="cards__lista">
+                                {% if cards %} <!-- teste para garantir que há conteúdo em cards -->
+                        <!-- Abaixo, produto.id vem do dicionário em views
+                        # info é o value do dicionário
+                        # cards.items: card é a variável que contém o dicionário, e items indica os itens-->
+                                {% for lcompras in cards %} 
+                                <li class="card">
+                                    <a href="{% url 'imagemlcompras' lcompras.id %}">
+        <!-- "indexlcompras", acima, é a URL para onde os dados do formulário serão enviados quando o usuário clicar no botão de envio. 
+        É uma rota definida no Django que será responsável por processar as informações enviadas pelo formulário e realizar a edição do lcompras correspondente ao "lcompras_id" informado. -->
+                                    {% if lcompras.foto == "" or lcompras.foto == null %}
+                                        <img class="card__imagem" src="{% static '/assets/imagens/produtos/not-found.png'%}" alt="sem foto">
+                                    {% else %}
+                                        <img class="card__imagem" src="{{ lcompras.foto.url }}" alt="foto">
+                                    {% endif %}
+                                    </a>
+                                    <span class="card__tag">{{ lcompras.setor }}</span>
+                                    <div class="card__info">
+                                        <a href="{% url 'imagemlcompras' lcompras.id %}">
+                                            <p class="card__titulo">{{ lcompras.nome }} </p>
+                                        </a>    
+                                        <!-- <div class="card__texto"> -->
+                                        <p class="card__titulo">{{ lcompras.unidade }}</p>
+                                        <p class="card__titulo">{{ lcompras.preco }}</p>
+                                            <!-- <span>
+        <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                            </span> -->
+                                        <!-- </div> -->
+                                    </div>
+                                </li>
+                                {% endfor %}
+                                {% else %}
+                                <div class="imagem__texto">
+                                    <p>Nada encontrado para exibir. </p>
+                                </div>
+                                {% endif %}
+                            </ul>
+                        </div>
+                
+                        <div class="container">
+                            {% if cards.has_other_pages %}
+                            <ul class="pagination">
+                                {% if cards.has_previous %}
+                                <li class="pagination">
+                                    <a href="?page={{ cards.previous_page_number }}" class="page-link">&laquo;</a>
+                                </li>
+                                {% else %}
+                                <li class="pagination">
+                                    <a class="disabled page-link">&laquo;</a>
+                                </li>
+                                {% endif %}
+                                {% for pagina in cards.paginator.page_range %}
+                                {% if cards.number == pagina %}
+                                <li class="pagination">
+                                    <a class="active page-link">{{ pagina }}</a>
+                                </li>
+                                {% else %}
+                                <li class="pagination">
+                                    <a href="?page={{pagina}}" class="page-link">{{pagina}}</a>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                                {% if cards.has_next %}
+                                <li class="pagination">
+                                    <a href="?page={{ cards.next_page_number }}" class="page-link">&raquo;</a>
+                                </li>
+                                {% else %}
+                                <li class="pagination">
+                                    <a class="disabled page-link">&raquo;</a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </section>
+                </section>
+            </body>
+        </main>
+    </div>
+{% endblock %}

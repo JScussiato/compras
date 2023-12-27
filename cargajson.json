@@ -1,0 +1,625 @@
+[
+ {
+  "nome": "Abobrinha",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "7.99",
+  "foto": "Abobrinha.png"
+ },
+ {
+  "nome": "Acucar",
+  "unidade": "UN",
+  "setor": 5,
+  "preco": "4.29",
+  "foto": "Acucar.png"
+ },
+ {
+  "nome": "Adocante",
+  "unidade": "UN",
+  "setor": 4,
+  "preco": "4.58",
+  "foto": "Adocante.png"
+ },
+ {
+  "nome": "Agua Mineral Sem Gas",
+  "unidade": "UN",
+  "setor": 2,
+  "preco": "1.79",
+  "foto": "Agua_Mineral_Sem_Gas.png"
+ },
+ {
+  "nome": "Alcool 70",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "10.98",
+  "foto": "Alcool_70.png"
+ },
+ {
+  "nome": "Alface Mimosa",
+  "unidade": "UN",
+  "setor": 7,
+  "preco": "6.97",
+  "foto": "Alface_Mimosa.png"
+ },
+ {
+  "nome": "Amaciante",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "21.9",
+  "foto": "Amaciante_Downy_Brisa.png"
+ },
+ {
+  "nome": "Arroz",
+  "unidade": "UN",
+  "setor": 5,
+  "preco": "6.99",
+  "foto": "Arroz.png"
+ },
+ {
+  "nome": "Azeite Oliva",
+  "unidade": "LT",
+  "setor": 4,
+  "preco": "36.9",
+  "foto": "Azeite_Oliva.png"
+ },
+ {
+  "nome": "Bacon",
+  "unidade": "KG",
+  "setor": 8,
+  "preco": "64.9",
+  "foto": "Bacon_Defumado.png"
+ },
+ {
+  "nome": "Banana",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "7.98",
+  "foto": "Banana.png"
+ },
+ {
+  "nome": "Batata",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "7.98",
+  "foto": "Batata.png"
+ },
+ {
+  "nome": "Batata Doce",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "5.49",
+  "foto": "Batata_Doce.png"
+ },
+ {
+  "nome": "Batata Palha",
+  "unidade": "UN",
+  "setor": 3,
+  "preco": "5.99",
+  "foto": "Batata_Palha.png"
+ },
+ {
+  "nome": "Bife Alcatra",
+  "unidade": "KG",
+  "setor": 1,
+  "preco": "57.9",
+  "foto": "Bife_Alcatra.png"
+ },
+ {
+  "nome": "Café",
+  "unidade": "UN",
+  "setor": 5,
+  "preco": "10.98",
+  "foto": "Cafe.png"
+ },
+ {
+  "nome": "Cebola",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "7.98",
+  "foto": "Cebola.png"
+ },
+ {
+  "nome": "Cenoura",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "7.95",
+  "foto": "Cenoura.png"
+ },
+ {
+  "nome": "Cerveja Fardo",
+  "unidade": "LT",
+  "setor": 2,
+  "preco": "53.88",
+  "foto": "Cerveja_Fardo.png"
+ },
+ {
+  "nome": "Cerveja Itaipava 269ML",
+  "unidade": "LT",
+  "setor": 2,
+  "preco": "19.12",
+  "foto": "Cerveja_Itaipava_269ML.png"
+ },
+ {
+  "nome": "Coca Sem Acucar",
+  "unidade": "UN",
+  "setor": 2,
+  "preco": "4.39",
+  "foto": "Coca_Sem_Acucar.png"
+ },
+ {
+  "nome": "Cogumelo Paris",
+  "unidade": "UN",
+  "setor": 7,
+  "preco": "19.98",
+  "foto": "Cogumelo_Paris.png"
+ },
+ {
+  "nome": "Cream Cheese",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "21.4",
+  "foto": "Cream_Cheese.png"
+ },
+ {
+  "nome": "Creme Leite Lata",
+  "unidade": "UN",
+  "setor": 4,
+  "preco": "9.69",
+  "foto": "Creme_Leite.png"
+ },
+ {
+  "nome": "Creme Ricota",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "8.49",
+  "foto": "Creme_Ricota.png"
+ },
+ {
+  "nome": "Detergente Louca",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "13.9",
+  "foto": "Detergente_Louca.png"
+ },
+ {
+  "nome": "Energetico",
+  "unidade": "UN",
+  "setor": 2,
+  "preco": "8.99",
+  "foto": "Energetico.png"
+ },
+ {
+  "nome": "Ervilha Congelada",
+  "unidade": "UN",
+  "setor": 1,
+  "preco": "5.79",
+  "foto": "Ervilha_Congelada.png"
+ },
+ {
+  "nome": "Espaguete",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "10.99",
+  "foto": "Espaguete_Formolo.png"
+ },
+ {
+  "nome": "Esponja Aco",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "4.29",
+  "foto": "Esponja_Aco.png"
+ },
+ {
+  "nome": "Farinha Trigo",
+  "unidade": "UN",
+  "setor": 5,
+  "preco": "4.79",
+  "foto": "Farinha_Trigo.png"
+ },
+ {
+  "nome": "Feijao",
+  "unidade": "UN",
+  "setor": 5,
+  "preco": "7.98",
+  "foto": "Feijao.png"
+ },
+ {
+  "nome": "Fermento",
+  "unidade": "UN",
+  "setor": 4,
+  "preco": "4.59",
+  "foto": "Fermento_Quimico.png"
+ },
+ {
+  "nome": "File Peito Frango",
+  "unidade": "KG",
+  "setor": 1,
+  "preco": "20.25",
+  "foto": "File_Peito_Frango.png"
+ },
+ {
+  "nome": "Gelo",
+  "unidade": "UN",
+  "setor": 2,
+  "preco": "7.49",
+  "foto": "Gelo.png"
+ },
+ {
+  "nome": "Guardanapo",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "1.99",
+  "foto": "Guardanapo.png"
+ },
+ {
+  "nome": "Laranja",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "7.95",
+  "foto": "Laranja.png"
+ },
+ {
+  "nome": "Lava Louca",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "6.95",
+  "foto": "Lava_Louca.png"
+ },
+ {
+  "nome": "Lava Roupa Liquido",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "39.9",
+  "foto": "Lava_Roupa_Liquido_Downy.png"
+ },
+ {
+  "nome": "Lava Roupa Po",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "26.98",
+  "foto": "Lava_Roupa_Po.png"
+ },
+ {
+  "nome": "Leite Condensado Lata",
+  "unidade": "UN",
+  "setor": 4,
+  "preco": "12.9",
+  "foto": "Leite_Condensado.png"
+ },
+ {
+  "nome": "Leite Condensado Tp",
+  "unidade": "UN",
+  "setor": 4,
+  "preco": "6.99",
+  "foto": "Leite_Condensado_Tp.png"
+ },
+ {
+  "nome": "Leite Integral",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "3.85",
+  "foto": "Leite_Integral.png"
+ },
+ {
+  "nome": "Limao",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "11.98",
+  "foto": "Limao.png"
+ },
+ {
+  "nome": "Maca",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "11.98",
+  "foto": "Maca.png"
+ },
+ {
+  "nome": "Macarrao",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "10.99",
+  "foto": "Macarrao.png"
+ },
+ {
+  "nome": "Mamao",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "11.98",
+  "foto": "Mamao.png"
+ },
+ {
+  "nome": "Manteiga",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "10.49",
+  "foto": "Manteiga.png"
+ },
+ {
+  "nome": "Margarina",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "11.7",
+  "foto": "Margarina.png"
+ },
+ {
+  "nome": "Melancia",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "9.99",
+  "foto": "Melancia.png"
+ },
+ {
+  "nome": "Melao",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "6.98",
+  "foto": "Melao.png"
+ },
+ {
+  "nome": "Milho Congelado",
+  "unidade": "UN",
+  "setor": 1,
+  "preco": "6.98",
+  "foto": "Milho_Congelado.png"
+ },
+ {
+  "nome": "Mix Folhas",
+  "unidade": "UN",
+  "setor": 7,
+  "preco": "6.98",
+  "foto": "Mix_Folhas.png"
+ },
+ {
+  "nome": "Molho Tomate",
+  "unidade": "UN",
+  "setor": 4,
+  "preco": "4.79",
+  "foto": "Molho_Tomate.png"
+ },
+ {
+  "nome": "Nectarina",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "11.9",
+  "foto": "Nectarina.png"
+ },
+ {
+  "nome": "Oleo Girassol",
+  "unidade": "UN",
+  "setor": 4,
+  "preco": "9.9",
+  "foto": "Oleo_Girassol.png"
+ },
+ {
+  "nome": "Ovos",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "23.98",
+  "foto": "Ovos.png"
+ },
+ {
+  "nome": "Pao Fatiado",
+  "unidade": "UN",
+  "setor": 10,
+  "preco": "15.99",
+  "foto": "Pao_Fatiado.png"
+ },
+ {
+  "nome": "Pao Frances",
+  "unidade": "KG",
+  "setor": 10,
+  "preco": "11.95",
+  "foto": "Cacetinho.png"
+ },
+ {
+  "nome": "Papel Higienico",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "39.98",
+  "foto": "Papel_Higienico.png"
+ },
+ {
+  "nome": "Pe Moca",
+  "unidade": "UN",
+  "setor": 3,
+  "preco": "6.99",
+  "foto": "Pe-de-Moca.png"
+ },
+ {
+  "nome": "Peito Frango Sem Pele",
+  "unidade": "UN",
+  "setor": 1,
+  "preco": "19.9",
+  "foto": "Peito_Frango_Sem_Pele.png"
+ },
+ {
+  "nome": "Peito Peru",
+  "unidade": "KG",
+  "setor": 8,
+  "preco": "89.9",
+  "foto": "Peito_Peru_Fatiado.png"
+ },
+ {
+  "nome": "Pepino Conserva",
+  "unidade": "UN",
+  "setor": 4,
+  "preco": "9.98",
+  "foto": "Pepino_Conserva.png"
+ },
+ {
+  "nome": "Pepino Japones",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "10.65",
+  "foto": "Pepino_Japones.png"
+ },
+ {
+  "nome": "Pera",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "21.9",
+  "foto": "Pera.png"
+ },
+ {
+  "nome": "Pessego",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "9.98",
+  "foto": "Pessego.png"
+ },
+ {
+  "nome": "Pilhas AA",
+  "unidade": "UN",
+  "setor": 9,
+  "preco": "23.9",
+  "foto": "Pilhas_AA.png"
+ },
+ {
+  "nome": "Pilhas AAA",
+  "unidade": "UN",
+  "setor": 9,
+  "preco": "18.9",
+  "foto": "Pilhas_AAA.png"
+ },
+ {
+  "nome": "Qboa",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "4.49",
+  "foto": "Qboa.png"
+ },
+ {
+  "nome": "Queijo Fatiado",
+  "unidade": "KG",
+  "setor": 8,
+  "preco": "51.9",
+  "foto": "Queijo_Fatiado.png"
+ },
+ {
+  "nome": "Queijo Ralado",
+  "unidade": "UN",
+  "setor": 5,
+  "preco": "15.5",
+  "foto": "Queijo_Ralado.png"
+ },
+ {
+  "nome": "Repolho",
+  "unidade": "UN",
+  "setor": 7,
+  "preco": "6.98",
+  "foto": "Repolho_Fatiado.png"
+ },
+ {
+  "nome": "Saco Congelar 3L",
+  "unidade": "UN",
+  "setor": 9,
+  "preco": "14.9",
+  "foto": "Saco_Congelar_3L.png"
+ },
+ {
+  "nome": "Saco Congelar 5L",
+  "unidade": "UN",
+  "setor": 9,
+  "preco": "18.9",
+  "foto": "Saco_Congelar_5L.png"
+ },
+ {
+  "nome": "Sal Marinho",
+  "unidade": "UN",
+  "setor": 5,
+  "preco": "1.59",
+  "foto": "Sal_Marinho.png"
+ },
+ {
+  "nome": "Salsa",
+  "unidade": "UN",
+  "setor": 7,
+  "preco": "3.29",
+  "foto": "Salsa.png"
+ },
+ {
+  "nome": "Sapolio Cremoso",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "8.43",
+  "foto": "Sapolio_Cremoso.png"
+ },
+ {
+  "nome": "Saponaceo Classico",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "10.49",
+  "foto": "Saponaceo_Classico.png"
+ },
+ {
+  "nome": "Saponaceo Inox",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "10.49",
+  "foto": "Saponaceo_Inox.png"
+ },
+ {
+  "nome": "Suco Bergamota",
+  "unidade": "UN",
+  "setor": 2,
+  "preco": "8.98",
+  "foto": "Suco_Bergamota.png"
+ },
+ {
+  "nome": "Suco Laranja",
+  "unidade": "UN",
+  "setor": 2,
+  "preco": "8.98",
+  "foto": "Suco_Laranja.png"
+ },
+ {
+  "nome": "Toalha Papel",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "14.98",
+  "foto": "Toalha_Papel.png"
+ },
+ {
+  "nome": "Toalha Umedecida",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "13.9",
+  "foto": "Toalha_Umedecida.png"
+ },
+ {
+  "nome": "Tomate Italiano",
+  "unidade": "KG",
+  "setor": 7,
+  "preco": "12.98",
+  "foto": "Tomate.png"
+ },
+ {
+  "nome": "Torrada Integral",
+  "unidade": "UN",
+  "setor": 3,
+  "preco": "9.88",
+  "foto": "Torrada_Integral.png"
+ },
+ {
+  "nome": "Veja",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "6.98",
+  "foto": "Veja.png"
+ },
+ {
+  "nome": "Vinagre Alcool",
+  "unidade": "UN",
+  "setor": 8,
+  "preco": "1.98",
+  "foto": "Vinagre_Alcool.png"
+ },
+ {
+  "nome": "Vodka",
+  "unidade": "UN",
+  "setor": 2,
+  "preco": "48.7",
+  "foto": "Vodka.png"
+ }
+]

@@ -1,0 +1,10 @@
+<!-- templates / partials / _alertas.html-->
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            <!-- <p class="imagem__titulo">Estou em templates / partials / _alertas.html</p> -->
+<!-- Como o Django vai saber qual tag puxar? Pelas declarações messages.error e messages.successs em views.py -->
+            {{message}}
+        </div>
+    {% endfor %}
+{% endif %}

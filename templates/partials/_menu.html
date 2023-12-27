@@ -1,0 +1,53 @@
+<!-- templates / partials / _menu.html-->
+{% load static %}
+<div class="pagina-inicial">
+    <!-- <p class="imagem__titulo">Estou em templates / partials / _menu.html</p> -->
+    <header class="cabecalho">
+        <img src="{% static '/assets/logo/Carrinho_Compras.png' %}" alt="Logo da L.C." />
+        {% for message in messages %}
+        <div class="alert alert-primary">
+            <p id="messages">{{message}}</p>
+        </div>
+        {% endfor %}
+    </header>
+    
+    <main class="principal">
+        <section class="menu-lateral">
+            <nav class="menu-lateral__navegacao">
+                <!-- <p class="menu-lateral">Request Path {{ request.path }}</p> -->
+                <a href="{% url 'indexlcompras' %}" {% if request.path == '/' %}class="selecionado"{% endif %}>Lista de Compras</a>
+                <a href="{% url 'novoitemlcompras' %}" {% if request.path == '/novoitemlcompras' %}class="selecionado"{% endif %}>Novo Item L.C.</a>
+                <a href="{% url 'indexprodutos' %}" {% if request.path == '/indexprodutos' %}class="selecionado"{% endif %}>Cadastro de Produtos</a>
+                <a href="{% url 'novoproduto' %}" {% if request.path == '/novoproduto' %}class="selecionado"{% endif %}>Novo Produto</a>
+                <a href="{% url 'login' %}" {% if request.path == '/login' %}class="selecionado"{% endif %}>Login</a>
+                <a href="{% url 'logout' %}" {% if request.path == '/logout' %}class="selecionado"{% endif %}>Logout</a>
+                <a href="{% url 'cadastro' %}" {% if request.path == '/cadastro' %}class="selecionado"{% endif %}>Users</a>
+            </nav>
+
+            <div class="cabecalho__busca">
+                <div class="busca__fundo">
+                    <form action="{% url 'buscarproduto' %}">
+                        <input class="busca__input" type="text" name = "buscarproduto" placeholder="O que você procura?">
+                        <button type="submit">
+                            <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
+                        </button>    
+                    </form>
+                </div>
+            </div>
+            
+            <section class="tags">
+                <p class="tags__titulo">Busca por Setor:</p>
+                <ul class="tags__lista">
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Açougue' %}" class="btn" style="color: #C9C9C9;">Açougue</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Bebidas' %}" class="btn" style="color: #C9C9C9;">Bebidas</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Bomboniere' %}" class="btn" style="color: #C9C9C9;">Bomboniere</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Conservas' %}" class="btn" style="color: #C9C9C9;">Conservas</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Graos' %}" class="btn" style="color: #C9C9C9;">Grãos</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Limpeza' %}" class="btn" style="color: #C9C9C9;">Limpeza</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Hortifruti' %}" class="btn" style="color: #C9C9C9;">Hortifruti</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Laticínios' %}" class="btn" style="color: #C9C9C9;">Laticínios</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Organizadores' %}" class="btn" style="color: #C9C9C9;">Organizadores</a></li>
+                    <li class="tags__tag"><a href="{% url 'filtro' 'Padaria' %}" class="btn" style="color: #C9C9C9;">Padaria</a></li>
+                </ul>
+            </section>
+        </section>

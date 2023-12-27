@@ -1,0 +1,30 @@
+<!-- templates / produtos / editarproduto.html-->
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+            <section class="galeria" style="margin-left: 5em">
+                <!-- <p class="imagem__titulo">Estou em templates / produtos / editarproduto.html</p> -->
+                <form action="{% url 'editarproduto' produto_id %}" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="row">
+                        <h2 class="cards__titulo">Edite o Produto</h2>
+                        {% for field in form.visible_fields %} 
+                        <!-- itera pelos itens que têm dentro do formulário -->
+                        <div class="col-12 col-lg-12" style="margin-bottom: 10px;">
+                            <label for="{{ field.id_for_label }}" style="color:#759ea5; margin-bottom: 5px;">{{field.label}}</label>
+                            <!-- {{field.label}} é o valor que vai aparecer a label de cada um dos inputs -->
+                            <!-- {{ field.id_for_label }} é o parâmetro do for que vai a id da label -->
+                            {{ field }} <!-- Este parâmetro não sei o que faz?-->
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div>
+                        <button class="btn btn-success col-12" style="padding: top 5px;" type="submit">Editar Produto</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+{% endblock %}
